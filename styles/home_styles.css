@@ -126,7 +126,7 @@ body {
     width: 8em;
     transform: rotate(15deg);
   opacity: 0;
-  animation: fadeQuick 5s ease-in-out infinite;
+  animation: fadeQuick 4s ease-in-out infinite;
 }
 
 @keyframes fadeQuick {
@@ -154,6 +154,6 @@ body {
 
 .map-button:hover {
   background-color: #E6A0BA;
-  color:#6D4B2D;
+  color:#330707;
 }
 
