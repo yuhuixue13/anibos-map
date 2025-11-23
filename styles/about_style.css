@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    box-sizing: border-box;
+    background: white;
+     font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  border-bottom: #d8d8d8 1px solid;
+}
+
+.logo {
+  height: 4em;
+  align-items: flex-start;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #CC3F4F;
+  font-size: 18px;
+  font-weight: 500;
+  font-weight: bold;
+  padding-right: 3em;
+  background-image: linear-gradient(#CC3F4F, #CC3F4F);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease;
+}
+.nav a:hover {
+  background-size: 55% 3px; 
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr; 
+  gap: 40px;                      
+  align-items: flex-start;
+  padding: 24px 0;
+  max-width: 100%;
+  padding-left:40px;
+  padding-right: 40px;
+}
+
+.about-left {
+
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 蓝色正方形 + 里面以后放照片 */
+.self-pic {
+  background-color: #cfe8ee;
+  border: 4px solid #86c8e0;
+  border-radius: 4px;
+  aspect-ratio: 1 / 1;  
+   width: 20em;
+  height: 20em; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 如果你以后放真实照片，加这个 */
+.self-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 标题 + 下面那条线 + 粉色圆圈 */
+.about-intro-meta {
+  position: relative;
+  padding-top: 4px;
+}
+
+.about-title-cn {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.about-title-underline {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #e1358a;
+}
+
+.about-pink-dot {
+  position: absolute;
+  left: 160px;     /* 你可以对着 Figma 慢慢调 */
+  top: 28px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #e1358a;
+}
+
+
+
