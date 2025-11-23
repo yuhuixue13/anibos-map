@@ -55,9 +55,6 @@ body {
   padding-right: 40px;
 }
 
-.about-left {
-
-}
 
 .about-card {
   display: flex;
@@ -100,7 +97,7 @@ body {
 
 .about-bg {
   position: relative;
-  width: 40em;
+  width: 35em;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -109,6 +106,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 3em;
 }
 
 .about-previous {
