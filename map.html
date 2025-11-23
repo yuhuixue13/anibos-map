@@ -13,9 +13,65 @@
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
   
     <!-- LINK TO YOUR STYLES -->
-    <link rel="stylesheet" href="styles/home_styles.css" />
+    <link rel="stylesheet" href="styles/map_style.css" />
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
+   <script defer src="scripts/map.js"></script>
   </head>
 
+  <header class="header">
+   <a href="index.html">
+  <img src="images/Xue_Yuhui_Final Logo.png" class="logo" alt="AniBos Logo">
+    </a>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-home">Home</a>
+      <a href="map.html" class="nav-map">Map</a>
+      <a href="about.html" class="nav-about">About</a>
+    </nav>
+    
+  </header>
+
+<main class="map-container">
+     <aside class="filters">
+      <input type="text" placeholder="What are you looking for?" class="search-box">
+
+      <div class="filter-buttons">
+        <button>Anime Store</button>
+        <button>Comic Book Store</button>
+        <button>Exhibition</button>
+        <button>Pop-Up Event</button>
+      </div>
+
+      <div class="location-list">
+        <div class="loc-card">Name<br>Address</div>
+        <div class="loc-card">Name<br>Address</div>
+        <div class="loc-card">Name<br>Address</div>
+      </div>
+    </aside>
+
+     <section class="map-area">
+      <div id="googleMap"></div>
+    </section>
+
+      <aside class="details">
+      <div class="img-box"></div>
+
+      <p class="place-name">Name</p>
+      <p class="place-location">Location</p>
+      <p class="place-desc">Description</p>
+
+      <button class="go-btn">Let's Go!</button>
+      <button class="visit-btn">Visit Website</button>
+    </aside>
+
+  </main>
+
+</body>
+</html>
+
+
+
+
+
+  

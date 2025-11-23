@@ -10,3 +10,109 @@ body {
     padding: 0;
     color: #333;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  border-bottom: #d8d8d8 1px solid;
+}
+
+.logo {
+  height: 4em;
+  align-items: flex-start;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #CC3F4F;
+  font-size: 18px;
+  font-weight: 500;
+  font-weight: bold;
+  padding-right: 3em;
+  background-image: linear-gradient(#CC3F4F, #CC3F4F);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease;
+}
+.nav a:hover {
+  background-size: 55% 3px; 
+}
+
+.map-container{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1.5fr;
+    max-width: 1200px;
+    padding: 0 40px;
+    align-items: center;
+
+}
+
+.map-container .filters{
+    display: grid;
+    grid-template-rows: 0.8fr 2fr 4fr;
+    gap: 1em;
+}
+
+.map-container .search-box{
+    border-radius: 999px;
+    font-size: 11px; 
+    width:20em;
+    height: 3em;
+    padding: 0 16px;
+    margin-top: 3em;
+    border: 2px solid #E6A0BA;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #E6A0BA;  
+  box-shadow: 0 0 0 3px rgba(204, 63, 79, 0.2); 
+}
+
+.filter-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 16px; 
+  margin-top: 20px;
+  padding-bottom: 2em;
+}
+
+.map-container .filter-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.filter-buttons button:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  background-color:#D2EEF2;
+}
+
+.filter-buttons button {
+  background-color: #F9FBFA;
+  border: none;
+  border-radius: 16px;
+  padding: 14px 12px;
+  font-size: 14px;
+  font-weight: 550;
+  color: #000000;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+  width: 100%;
+  height: 4em;
+
+}
+
+.filter-buttons button:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+
