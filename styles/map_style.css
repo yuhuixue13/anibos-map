@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 32px;
+  padding: 14px 32px;
   border-bottom: #d8d8d8 1px solid;
 }
 
@@ -50,14 +50,14 @@ body {
     grid-template-columns: 1fr 6fr 1.5fr;
     max-width: 1200px;
     padding: 0 40px;
-    align-items: center;
-
+    align-items: stretch; 
+    column-gap: 24px; 
 }
 
 .map-container .filters{
     display: grid;
-    grid-template-rows: 0.8fr 2fr 4fr;
-    gap: 1em;
+    grid-template-rows: auto auto 1fr;
+    gap: 1.2em;
 }
 
 .map-container .search-box{
@@ -113,6 +113,45 @@ body {
 
 .filter-buttons button:hover {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.location-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;  
+}
+
+
+.loc-card {
+  background-color: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  overflow: hidden;     
+  display: flex;
+  flex-direction: column;
+
+}
+
+.loc-img {
+  width: 100%;
+  height: 100px;      
+  object-fit: cover;
+}
+
+.loc-footer {
+  background-color: #d7f2f7;
+  padding: 8px 14px;
+}
+
+.loc-name {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.loc-address {
+  margin: 2px 0 0 0;
+  font-size: 11px;
 }
 
 
