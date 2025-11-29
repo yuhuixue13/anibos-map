@@ -73,8 +73,10 @@ body {
 }
 
 #map {
-  height: 600px;
+  height: 630px;
+  margin-top: 2em;
 }
+
 
 .search-box:focus {
   outline: none;
@@ -193,7 +195,6 @@ body {
   object-fit: cover;
 }
 
-/* 文本 */
 .place-name {
   margin: 12px 0 4px;
   font-size: 18px;
@@ -211,14 +212,12 @@ body {
   line-height: 1.4;
 }
 
-/* 按钮区域在底部对齐一点更好看 */
 .detail-buttons {
-  margin-top: auto;          /* 把按钮推到底部 */
+  margin-top: auto;        
   display: flex;
   gap: 16px;
 }
 
-/* 通用按钮样式 */
 .detail-btn {
   flex: 1;
   border-radius: 999px;
@@ -231,14 +230,14 @@ body {
               transform 0.1s ease;
 }
 
-/* 主按钮：粉色 */
+
 .primary-btn {
   background-color: #e6a0ba;
   color: #fff;
   box-shadow: 0 4px 10px rgba(230, 160, 186, 0.6);
 }
 
-/* 次按钮：浅粉边框 */
+
 .secondary-btn {
   text-align: center;
   background-color: #fbe6ef;
@@ -247,7 +246,7 @@ body {
   text-decoration: none;
 }
 
-/* hover 效果 */
+
 .primary-btn:hover {
   background-color: #cc3f4f;
   box-shadow: 0 6px 14px rgba(204, 63, 79, 0.6);

@@ -3,7 +3,7 @@
     center: [51.505, -0.09],
     zoom: 13
 }); */
-const map = new L.Map('map').setView([51.505, -0.09], 13);
+const map = new L.Map('map').setView([42.3554, -71.0693], 14);
 
     const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
