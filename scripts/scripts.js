@@ -9,3 +9,19 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+
+    const animeZakkaMarker = L.marker([42.348481056288655, -71.08723468256417]).addTo(map);
+    animeZakkaMarker.bindPopup(`
+        <b>Anime Zakka</b><br> 
+        Newbury St · Anime Goods Shop 
+        `);
+    const newburyComicsMarker = L.marker([42.34815674945346, -71.08706425497522]).addTo(map);
+    newburyComicsMarker.bindPopup(`
+        <b>Newbury Comics</b><br> 
+        Newbury St · Anime & Comics Shop 
+        `);
+    const animneGoodsMarker = L.marker([42.348333642986674, -71.08624670671078]).addTo(map);
+    animneGoodsMarker.bindPopup(`
+        <b>Animn Goods</b><br> 
+        Newbury St · Anime Merch Shop 
+        `);
