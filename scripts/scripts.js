@@ -17,6 +17,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name:"Anime Zakka",
                 coords: [42.348481056288655, -71.08723468256417],
                 desc: " Newbury St · Anime Goods Shop ",
+                img: "images/anime_zakka.png",
+                url: "https://www.animezakka.com/",
+                descL: "This destination for anime enthusiasts stocks toys & threads, plus quirky Japanese novelty items.",
                 categories : ["Anime"]
             },
             
@@ -24,6 +27,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.34815674945346, -71.08706425497522],
                 desc: " Newbury St ·Anime & Comics Shop ",
+                img: "images/newburycomicslocations_stor01.webp",
+                url: "https://www.newburycomics.com/",
+                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
             },
             
@@ -31,6 +37,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Anime Goods",
                 coords: [42.348333642986674, -71.08624670671078],
                 desc: " Newbury St ·Anime Merch Shop ",
+                img: "images/Anime_Goods.jpg",
+                url: "https://www.instagram.com/nbanimegoods/",
+                descL: "Store selling anime-inspired toys and collectibles such as labubus alongside blind boxes.",
                 categories : ["Anime"]
             },
             
@@ -38,6 +47,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Anime Zakka",
                 coords: [42.3727966424579, -71.11990083309102],
                 desc: " Cambridge · Anime Goods Shop ",
+                img: "images/AnimeZakkaH.webp",
+                url: "https://www.animezakka.com/",
+                descL: "This destination for anime enthusiasts stocks toys & threads, plus quirky Japanese novelty items.", 
                 categories : ["Anime"]
             },
 
@@ -45,6 +57,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "More Fun",
                 coords: [42.354136118468006, -71.06214824130628],
                 desc: " Chinatown · Anime Goods Shop ",
+                img: "images/morefun.jpg",
+                url: "https://www.morefunus.com/",
+                descL: "Retail store selling stationery, tableware, tech accessories, toys, Chinese traditional culture goods, and gifts in Boston Chinatown.", 
                 categories : ["Anime"]
             },
 
@@ -52,6 +67,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Tokyo Anime Center",
                 coords: [42.57850969818254, -71.2411256135517],
                 desc: " Burlington · Anime Goods Shop ",
+                img: "images/TokyoAnimeCenter.png",
+                url: "https://www.instagram.com/tac_burlingtonmall_ma/",
+                descL: "Official account of Tokyo Anime Center Burlington Mall.", 
                 categories : ["Anime"]
             },
 
@@ -59,6 +77,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.361866647110936, -71.054910154064],
                 desc: " Quincy Market · Anime & Comics Shop ",
+                img: "images/newburycomicsQ.webp",
+                url: "https://www.newburycomics.com/",
+                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
             },
 
@@ -66,6 +87,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.37926856510349, -71.12223461683303],
                 desc: "  Cambridge · Anime & Comics Shop ",
+                img: "images/newburycomicsH.jpg",
+                url: "https://www.newburycomics.com/",
+                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
             },
             
@@ -75,6 +99,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Comicopia",
                 coords: [42.348826848375175, -71.09313301833218],
                 desc: "  Commonealth · Comics Book Shop ",
+                img: "images/Comicopia.jpg",
+                url: "https://comicopia.com/",
+                descL: "Niche bookshop for new comics, graphic novels, paperbacks & translated Japanese manga..",
                 categories : ["Comic"]
             },
             
@@ -82,6 +109,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Friar Tuck's Comics & Collectibles",
                 coords: [42.34316520057848, -71.12330793182595],
                 desc: "  Brookline · Comics Book Shop ",
+                img: "images/friartucks.webp",
+                url: "https://friartuckscomics.com/",
+                descL: "Comic book shop featuring classic and independent comics, along with collectibles and role-playing games.x",
                 categories : ["Comic"]
             },
 
@@ -89,6 +119,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "The Million Year Picnic",
                 coords: [42.37308262085624, -71.12050707415347],
                 desc: "  Cambridge · Comics Book Shop ",
+                img: "images/Themillionyearpicnic.webp",
+                url: "https://www.themillionyearpicnic.com/",
+                descL: "Long-running comics shop specializing in independent & alternative comic books & graphic novels.",
                 categories : ["Comic"]
             },
            
@@ -96,6 +129,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Comicazi",
                 coords: [42.39630721978794, -71.1212386913431],
                 desc: "  Somerville · Comics Book Shop ",
+                img: "images/Comicazi.png",
+                url: "https://www.comicazi.com/",
+                descL: "This snug comic shop also offers items such as graphic novels, games & toys, plus events.",
                 categories : ["Comic"]
             },
 
@@ -103,6 +139,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Hub Comics",
                 coords: [42.38131869789423, -71.09714246065965],
                 desc: "  Somerville · Comics Book Shop ",
+                img: "images/Hubcomics.webp",
+                url: "https://hubcomics.com/",
+                descL: "Snug indie comics shop with a wide selection of graphic novels, plus signings & movie nights.",
                 categories : ["Comic"]
             },
 
@@ -110,6 +149,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Amaya Bros Comics",
                 coords: [42.37164967738756, -71.08201273182456],
                 desc: "  Cambridge · Comics Book Shop ",
+                img: "images/Amayabroscomics.webp",
+                url: "https://amayabroscomics.com/",
+                descL: "The Amaya Bros. Comics store hopes to bring both comics, sports memorabillia, and trading card supplies to the Cambridge and Greater Boston area.",
                 categories : ["Comic"]
             },
 
@@ -117,13 +159,19 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Magic Dragon Comics",
                 coords: [42.41401408624637, -71.14534374901326],
                 desc: "  Arlington · Comics Book Shop ",
+                img: "images/Magicdragoncomics.webp",
+                url: "https://www.facebook.com/magicdragoncomics",
+                descL: "Quaint collectibles store stocking comic books & graphic novels for all ages in a no-frills setting.",
                 categories : ["Comic"]
             },
 
             {
-                name: "New England Comics（NEC）",
+                name: "New England Comics (NEC)",
                 coords: [42.25174042018753, -71.00060561742801],
                 desc: "  Quincy · Comics Book Shop ",
+                img: "images/NEC.jpg",
+                url: "https://newenglandcomics.biz/",
+                descL: "Outpost of a local chain featuring a variety of comics & graphic novels, plus toys & action figures.",
                 categories : ["Comic"]
             },
 
@@ -131,6 +179,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.34815674945346, -71.08706425497522],
                 desc: " Newbury St ·Anime & Comics Shop ",
+                img: "images/newburycomicslocations_store01.jpg",
+                url: "https://www.newburycomics.com/",
+                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
             },
 
@@ -138,6 +189,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.361866647110936, -71.054910154064],
                 desc: " Quincy Market · Anime & Comics Shop ",
+                img: "images/newburycomicsQ.jpg",
+                url: "https://www.newburycomics.com/",
+                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
             },
 
@@ -145,6 +199,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.37926856510349, -71.12223461683303],
                 desc: "  Cambridge · Anime & Comics Shop ",
+                img: "images/newburycomicsH.jpg",
+                url: "https://www.newburycomics.com/",
+                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
             },
 
@@ -153,42 +210,60 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
              {
                 name: "Anime Boston 2025",
                 coords: [42.34814992053629, -71.08362594319644],
-                time: "May 23 – 25, 2025",
+                time: "May 23 - 25, 2025",
+                img: "images/animeboston2025.jpg",
+                url: "https://www.animeboston.com/",
+                descL: "Anime Boston is an annual three-day anime fan convention held in the spring in Boston, Massachusetts, United States. The convention features several events which include a masquerade, an anime music video contest, video programming rooms, an artists' alley and art show, karaoke, game shows, swap meets, Anime Unscripted, video games, RPGs, and a LARP.",
                 categories : ["Exhibition"]
             },
 
             {
                 name: "FAN EXPO Boston 2025",
                 coords: [42.34514502753188, -71.04717684531916],
-                time: "Aug 8 – 10, 2025",
+                time: "Aug 8 - 10, 2025",
+                img: "images/FXB25.webp",
+                url: "https://fanexpohq.com/fanexpoboston/",
+                descL: "SFan Expo Boston, formerly Boston Comic Con, is a multigenre convention held annually in Boston, Massachusetts. Primarily focused on comic books, the convention later featured media guests from film and television, cosplayers, an art auction, a tabletop/CCG/RPG gaming room, and an annual costume contest.",
                 categories : ["Exhibition"]
             },
 
             {
                 name: "PopCult Anime Con 2025",
                 coords: [42.395417598113546, -71.25973041648146],
-                time: "Aug 22 – 24, 2025",
+                time: "Aug 22 - 24, 2025",
+                img: "images/popcultanimeconfeature.jpeg",
+                url: "https://popcultanimecon.com/",
+                descL: "PopCult Anime Con is a two-day multi-genre pop-culture and cosplay convention in the Bay State of Massachusetts. PopCult Anime Con is a community-first and disability-friendly event annually showcasing local artists, performers, cosplayers, musicians and educators from around New England.",
                 categories : ["Exhibition"]
             },
 
             {
                 name: "Japan Festival Boston 2025",
                 coords: [42.35524031126495, -71.06565050114126],
-                time: "Apr 26 – 27, 2025",
+                time: "Apr 26 - 27, 2025",
+                img: "images/JFB.webp",
+                url: "https://www.japanfestivalboston.org/",
+                descL: "The Japan Festival Boston gives us a chance to share our culture with the Greater Boston area, and we have been expanding this festival each year. The festival is completely organized by volunteers and is supported by many sponsors and contributors from the community.",
                 categories : ["Exhibition"]
             },
 
             {
                 name: "Wicked Comic Con 2025",
                 coords: [42.34625289939097, -71.04301209316242],
-                time: "Oct 5, 2025",
+                time: "Oct 05, 2025",
+                img: "images/wickedcc.png",
+                url: "https://www.wickedcomiccon.com/",
+                descL: "Come to Wicked Comic Con for an action-packed day at the Westin Boston Seaport District featuring professional all-star DC and Marvel comic book creators, and collectible sellers featuring comic books, toys, cards, games, posters, apparel, and much more!",
                 categories : ["Exhibition"]
             },
 
             {
                 name: "MICE",
                 coords: [42.35035393918839, -71.11168636066118],
-                time: "Dec 6 - 7, 2025",
+                time: "Dec 06 - 07, 2025",
+                img: "images/MICE.jpg",
+                url: "https://www.micexpo.org/",
+                descL: "The Massachusetts Independent Comics Expo (MICE) is the New England area’s premiere event dedicated to the exciting and accessible art form of independent comics and graphic novels. Located at Boston University's School of Visual Arts, admission is free and open to the public.",
                 categories : ["Exhibition"]
             },
 
@@ -197,28 +272,40 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Genshin pop-up",
                 coords: [42.350007385698675, -71.08097174716764],
-                time: "Dec28-Jan5",
+                time: "Dec 28 - Jan 05",
+                img: "images/ginshen.jpeg",
+                url: "https://x.com/GenshinImpact/status/1869925691161989135?lang=en",
+                descL: "Hi Traveler! Our last merch pop-up store of 2024 in the US will be hosted in Boston from December 28 to January 5. We will bring unique merchandise and exciting on-site activities. Join other Travelers and enjoy this fun-filled time together!",
                 categories : ["Pop-Up"]
             },
 
             {
                 name: "Love and Deepspace Campus Tour",
                 coords: [42.35223322388987, -71.1177169441439],
-                time: "Oct 2-3",
+                time: "Oct 02 - 03",
+                img: "images/LADSBU.jpg",
+                url: "https://www.instagram.com/p/DO71RNsjHhf/?hl=en",
+                descL: "The Love and Deepspace Campus Tour is coming to Boston University! Our themed bus will enter the campus and kick off a campus tour!",
                 categories : ["Pop-Up"]
             },
 
             {
                 name: "Filipino Anime Inspired Boston Pop-up",
                 coords: [42.350714493108455, -71.05997668949655],
-                time: "Mar 07-09",
+                time: "Jan 21 - Feb 02",
+                img: "images/Fpop.jpg",
+                url: "https://www.instagram.com/reel/DFZKleAu-S5/",
+                descL: "Filipino Anime Inspired comes to Boston, from January 21th to February 2nd, Open everyday from 12PM to 8PM, Dropping new Designs and More!",
                 categories : ["Pop-Up"]
             },
 
             {
                 name: "Ultra Man Pop Up",
                 coords: [42.34660912723419, -71.10736816066121],
-                time: "Nov 01-30",
+                time: "Nov 01 - 30",
+                img: "images/ultraman.jpg",
+                url: "https://www.kyuramen.com/post/ultraman-kyuramen-is-here-limited-time-heroic-feast",
+                descL: "Get ready, heroes! KYURAMEN is teaming up with Ultraman to celebrate 60 years of legendary adventures and the launch of the new series in the U.S. Themed meal are only available at selected locations (All NY, NJ, PA & MA Locations).",
                 categories : ["Pop-Up"]
             },
         ];
