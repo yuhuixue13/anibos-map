@@ -247,10 +247,14 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
         const filterButtons = document.querySelectorAll('.filter-buttons button');
         filterButtons.forEach(btn =>{
             btn.addEventListener ('click', () =>{
-               const category = btn.dataset.category;
-               showCategory(category);});
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const category = btn.dataset.category;
+                showCategory(category);});
         });
+        
 
+        
     
 
 

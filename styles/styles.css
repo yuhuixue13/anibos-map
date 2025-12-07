@@ -216,10 +216,27 @@ body {
   gap: 20px;
 }
 
-.page-map .filter-buttons button:hover {
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-  background-color:#D2EEF2;
+.map-container .filter-buttons button {
+  background: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
+
+.page-map .filter-buttons button:hover {
+  box-shadow: 0 6px 14px rgba(99, 182, 255, 0.552);
+}
+
+.map-container .filter-buttons button.active {
+  background: #b3deff;
+  box-shadow: 0 4px 10px rgba(0,150,200,0.3);
+  font-weight: bold;
+}
+
 
 .page-map .filter-buttons button {
   background-color: #F9FBFA;
@@ -237,9 +254,6 @@ body {
 
 }
 
-.page-map .filter-buttons button:hover {
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
-}
 
 .page-map .location-list {
     display: flex;
@@ -266,7 +280,7 @@ body {
 }
 
 .page-map .loc-footer {
-  background-color: #d7f2f7;
+  background-color: #b3deff;
   padding: 8px 14px;
 }
 
