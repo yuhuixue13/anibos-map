@@ -27,7 +27,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.34815674945346, -71.08706425497522],
                 desc: " Newbury St ·Anime & Comics Shop ",
-                img: "images/newburycomicslocations_stor01.webp",
+                img: "images/newburycomicsN.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
@@ -179,7 +179,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.34815674945346, -71.08706425497522],
                 desc: " Newbury St ·Anime & Comics Shop ",
-                img: "images/newburycomicslocations_store01.jpg",
+                img: "images/newburycomicsN.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
@@ -189,7 +189,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 name: "Newbury Comics",
                 coords: [42.361866647110936, -71.054910154064],
                 desc: " Quincy Market · Anime & Comics Shop ",
-                img: "images/newburycomicsQ.jpg",
+                img: "images/newburycomicsQ.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
                 categories : ["Anime", "Comic"]
@@ -310,6 +310,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             },
         ];
 
+
         markerStore = [];
         locations .forEach ( loc => {
             const m = L.marker (loc.coords)
@@ -317,7 +318,8 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             .bindPopup (`<b>${loc.name}</b> <br> ${loc.desc ?? ""} <br> <i>${loc.time ?? ""}</i>`);
             markerStore. push({
                 marker: m,
-                categories: loc.categories});
+                categories: loc.categories,
+                data: loc });  //?
         });
 
         function showCategory(category) {
@@ -339,6 +341,100 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 const category = btn.dataset.category;
                 showCategory(category);});
         });
+
+        const locationList = document.querySelector('.location-list');
+
+
+        const detailImg = document.getElementById('detail-img');
+        const detailName = document.getElementById('detail-name');
+        const detailLocation = document.getElementById('detail-location');
+        const detailDescL = document.getElementById('detail-descL');
+        const detailLink = document.getElementById('detail-link');
+
+
+        function renderDetail(loc) {
+            if (!loc) return; //为什么是return，！是什么意思？
+            detailImg.src = loc.img;
+            detailImg.alt = `Photo of ${loc.name}`;  
+            detailName.textContent = loc.name;
+            detailLocation.textContent = loc.desc;   // 这里用短的描述/地址
+            detailDescL.textContent = loc.descL;     
+            
+            if (detailLink) {
+                detailLink.href = loc.url || '#';   // 这 || '#'啥啊？！！！
+            }
+        };
+
+        function renderLocationList(list) {
+            locationList.innerHTML = '';    //这啥啊
+
+            list.forEach(loc => {
+            const card = document.createElement('div');   //为什么要创建div
+            card.classList.add('loc-card');   //这两步是干啥的？
+            card.dataset.name = loc.name;
+
+            const img = document.createElement('img');  // 这后面都是在干嘛？？
+            img.classList.add('loc-img');
+            img.src = loc.img;
+            img.alt = `Photo of ${loc.name}`;
+
+            const footer = document.createElement('div');
+            footer.classList.add('loc-footer');
+
+            const nameP = document.createElement('p');
+            nameP.classList.add('loc-name');
+            nameP.textContent = loc.name;
+
+            const addrP = document.createElement('p');
+            addrP.classList.add('loc-address');
+            addrP.textContent = loc.desc;    // 短描述/地址
+
+            footer.appendChild(nameP);
+            footer.appendChild(addrP);
+            card.appendChild(img);
+            card.appendChild(footer);
+
+            locationList.appendChild(card);
+            });
+        };
+
+        function showCategory(category) {
+        // 1. 控制地图上的点（你的原逻辑）
+        markerStore.forEach(item => {
+            if (item.categories.includes(category)) {
+            item.marker.addTo(map);
+            } else {
+            map.removeLayer(item.marker);
+            }
+        });
+
+        // 2. 过滤出这个分类下的所有店铺
+        const filtered = locations.filter(loc =>
+            loc.categories.includes(category)
+        );
+
+        // 3. 渲染左侧列表
+        renderLocationList(filtered);
+
+        // 4. 右侧详情显示这个分类里的第一个店
+        if (filtered.length > 0) {
+            renderDetail(filtered[0]);
+        } else {
+            // 可选：没有店时清空
+            detailName.textContent = 'No place found';
+            detailLocation.textContent = '';
+            detailDesc.textContent = '';
+            // detailImg.src = 'images/placeholder.png';
+            if (detailLink) detailLink.href = '#';
+        }
+        };
+
+
+
+
+
+
+
         
 
         
