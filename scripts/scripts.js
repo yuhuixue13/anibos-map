@@ -30,7 +30,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 img: "images/newburycomicsN.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime", "Comic"]
+                categories : ["Anime"]
             },
             
             {
@@ -80,7 +80,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 img: "images/newburycomicsQ.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime", "Comic"]
+                categories : ["Anime"]
             },
 
             {
@@ -90,7 +90,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 img: "images/newburycomicsH.jpg",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime", "Comic"]
+                categories : ["Anime"]
             },
             
 //Comics
@@ -182,7 +182,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 img: "images/newburycomicsN.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime", "Comic"]
+                categories : ["Comic"]
             },
 
             {
@@ -192,7 +192,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 img: "images/newburycomicsQ.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime", "Comic"]
+                categories : ["Comic"]
             },
 
             {
@@ -336,14 +336,15 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
         const filterButtons = document.querySelectorAll('.filter-buttons button');
         filterButtons.forEach(btn =>{
             btn.addEventListener ('click', () =>{
+                //
                 filterButtons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 const category = btn.dataset.category;
                 showCategory(category);});
         });
 
-        const locationList = document.querySelector('.location-list');
 
+        const locationList = document.querySelector('.location-list');
 
         const detailImg = document.getElementById('detail-img');
         const detailName = document.getElementById('detail-name');
