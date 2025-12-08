@@ -244,7 +244,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Genshin pop-up",
                 coords: [42.350007385698675, -71.08097174716764],
-                time: "Dec 28 - Jan 05",
+                time: "Dec 28 - Jan 05, 2024 - 2025",
                 img: "images/ginshen.jpeg",
                 url: "https://x.com/GenshinImpact/status/1869925691161989135?lang=en",
                 descL: "Hi Traveler! Our last merch pop-up store of 2024 in the US will be hosted in Boston from December 28 to January 5. We will bring unique merchandise and exciting on-site activities. Join other Travelers and enjoy this fun-filled time together!",
@@ -254,7 +254,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Love and Deepspace Campus Tour",
                 coords: [42.35223322388987, -71.1177169441439],
-                time: "Oct 02 - 03",
+                time: "Oct 02 - 03, 2025",
                 img: "images/LADSBU.jpg",
                 url: "https://www.instagram.com/p/DO71RNsjHhf/?hl=en",
                 descL: "The Love and Deepspace Campus Tour is coming to Boston University! Our themed bus will enter the campus and kick off a campus tour!",
@@ -264,7 +264,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Filipino Anime Inspired Boston Pop-up",
                 coords: [42.350714493108455, -71.05997668949655],
-                time: "Jan 21 - Feb 02",
+                time: "Jan 21 - Feb 02, 2025",
                 img: "images/Fpop.jpg",
                 url: "https://www.instagram.com/reel/DFZKleAu-S5/",
                 descL: "Filipino Anime Inspired comes to Boston, from January 21th to February 2nd, Open everyday from 12PM to 8PM, Dropping new Designs and More!",
@@ -274,7 +274,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Ultra Man Pop Up",
                 coords: [42.34660912723419, -71.10736816066121],
-                time: "Nov 01 - 30",
+                time: "Nov 01 - 30, 2025",
                 img: "images/ultraman.jpg",
                 url: "https://www.kyuramen.com/post/ultraman-kyuramen-is-here-limited-time-heroic-feast",
                 descL: "Get ready, heroes! KYURAMEN is teaming up with Ultraman to celebrate 60 years of legendary adventures and the launch of the new series in the U.S. Themed meal are only available at selected locations (All NY, NJ, PA & MA Locations).",
