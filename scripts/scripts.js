@@ -30,7 +30,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 img: "images/newburycomicsN.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime"]
+                categories : ["Anime", "Comic"]
             },
             
             {
@@ -80,7 +80,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 img: "images/newburycomicsQ.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime"]
+                categories : ["Anime", "Comic"]
             },
 
             {
@@ -90,7 +90,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 img: "images/newburycomicsH.jpg",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime"]
+                categories : ["Anime", "Comic"]
             },
             
 //Comics
@@ -175,35 +175,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 categories : ["Comic"]
             },
 
-            {
-                name: "Newbury Comics",
-                coords: [42.34815674945346, -71.08706425497522],
-                desc: " Newbury St ·Anime & Comics Shop ",
-                img: "images/newburycomicsN.webp",
-                url: "https://www.newburycomics.com/",
-                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Comic"]
-            },
-
-            {
-                name: "Newbury Comics",
-                coords: [42.361866647110936, -71.054910154064],
-                desc: " Quincy Market · Anime & Comics Shop ",
-                img: "images/newburycomicsQ.webp",
-                url: "https://www.newburycomics.com/",
-                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Comic"]
-            },
-
-            {
-                name: "Newbury Comics",
-                coords: [42.37926856510349, -71.12223461683303],
-                desc: "  Cambridge · Anime & Comics Shop ",
-                img: "images/newburycomicsH.jpg",
-                url: "https://www.newburycomics.com/",
-                descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
-                categories : ["Anime", "Comic"]
-            },
+          
 
             // Exhibitions
 
@@ -310,8 +282,16 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             },
         ];
 
+        const locationList = document.querySelector('.location-list');
 
-        markerStore = [];
+        const detailImg = document.getElementById('detail-img');
+        const detailName = document.getElementById('detail-name');
+        const detailLocation = document.getElementById('detail-location');
+        const detailDescL = document.getElementById('detail-descL');
+        const detailLink = document.getElementById('detail-link');
+
+
+       const markerStore = [];
         locations .forEach ( loc => {
             const m = L.marker (loc.coords)
             .addTo (map)
@@ -321,17 +301,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
                 categories: loc.categories,
                 data: loc });  //?
         });
+            renderLocationList(locations);   //  show all the store when come in
+            renderDetail(locations[0]); 
 
-        function showCategory(category) {
-            markerStore .forEach (item => {
-                if (item.categories.includes(category)) {
-                    item.marker.addTo(map);
-                }
-                else {
-                    map.removeLayer(item.marker);
-                }
-            });
-        };
 
         const filterButtons = document.querySelectorAll('.filter-buttons button');
         filterButtons.forEach(btn =>{
@@ -344,21 +316,11 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
         });
 
 
-        const locationList = document.querySelector('.location-list');
-
-        const detailImg = document.getElementById('detail-img');
-        const detailName = document.getElementById('detail-name');
-        const detailLocation = document.getElementById('detail-location');
-        const detailDescL = document.getElementById('detail-descL');
-        const detailLink = document.getElementById('detail-link');
-
-
         function renderDetail(loc) {
-            if (!loc) return; //为什么是return，！是什么意思？
             detailImg.src = loc.img;
             detailImg.alt = `Photo of ${loc.name}`;  
             detailName.textContent = loc.name;
-            detailLocation.textContent = loc.desc;   // 这里用短的描述/地址
+            detailLocation.textContent = loc.desc;  
             detailDescL.textContent = loc.descL;     
             
             if (detailLink) {
@@ -374,7 +336,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             card.classList.add('loc-card');   //这两步是干啥的？
             card.dataset.name = loc.name;
 
-            const img = document.createElement('img');  // 这后面都是在干嘛？？
+            const img = document.createElement('img');  
             img.classList.add('loc-img');
             img.src = loc.img;
             img.alt = `Photo of ${loc.name}`;
@@ -388,19 +350,27 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
 
             const addrP = document.createElement('p');
             addrP.classList.add('loc-address');
-            addrP.textContent = loc.desc;    // 短描述/地址
+            addrP.textContent = loc.desc;   
 
             footer.appendChild(nameP);
             footer.appendChild(addrP);
             card.appendChild(img);
             card.appendChild(footer);
 
-            locationList.appendChild(card);
+            card.addEventListener('click', () => {
+                renderDetail(loc);
+                const record = markerStore.find(item => item.data === loc);
+                if (record) {
+                    map.setView(record.marker.getLatLng(), 16); //
+                    record.marker.openPopup();
+                }
+                });
+
+                locationList.appendChild(card); //?
             });
-        };
+            };
 
         function showCategory(category) {
-        // 1. 控制地图上的点（你的原逻辑）
         markerStore.forEach(item => {
             if (item.categories.includes(category)) {
             item.marker.addTo(map);
@@ -429,9 +399,6 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             if (detailLink) detailLink.href = '#';
         }
         };
-
-
-
 
 
 

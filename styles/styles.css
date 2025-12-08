@@ -20,7 +20,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 18px;
 }
 
 .logo {
@@ -62,7 +64,8 @@ body {
 
 .page-home  .home-container .illustration-map{
     max-width: 40em;
-    max-height: 50em;
+    max-height: 42em;
+    margin-left: 3em;
     
     
 }
@@ -161,31 +164,27 @@ body {
   color:#330707;
 }
 
-
+,.page-map body {
+  height: 100vb;
+}
 
 .page-map  .map-container{
     display: grid;
-    grid-template-columns: 1fr 6fr 2.5fr;
+    grid-template-columns: 2.5fr 6fr 2.5fr;
     max-width: 100%;
     padding-left:40px;
     padding-right: 40px;
     align-items: stretch; 
     column-gap: 24px; 
-    height: 100vh;   
-}
-
-.page-map .map-container .filters{
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    gap: 1.2em;
+    height: 100%;   
 }
 
 .page-map .map-container .search-box{
     border-radius: 999px;
     font-size: 11px; 
-    width:20em;
-    height: 3em;
-    padding: 0 16px;
+    max-width: 100%; 
+    height: 1rem;     /*height change*/
+    /*padding: 0 16px;*/
     margin-top: 3em;
     border: 2px solid #E6A0BA;
 }
@@ -194,6 +193,7 @@ body {
   height: 630px;
   margin-top: 2em;
 }
+
 
 
 .page-map .search-box:focus {
@@ -254,12 +254,17 @@ body {
 
 }
 
+.page-map .filters {
+  display: flex;
+  flex-direction: column;
+  height: 41em;       
+  overflow: hidden;     /* 搜索框、按钮、列表之间的间距 */
+}
 
 .page-map .location-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;  
-    padding-bottom: 60px;   
+  flex: 1 1 auto;
+  min-height: 0;      /**/
+  overflow-y: auto;
 }
 
 
@@ -270,7 +275,7 @@ body {
   overflow: hidden;     
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 1em;
 }
 
 .page-map .loc-img {
