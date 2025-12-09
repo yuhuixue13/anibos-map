@@ -64,7 +64,7 @@ body {
 
 .page-home  .home-container .illustration-map{
     max-width: 40em;
-    max-height: 41em;
+    max-height: 55em;
     margin-left: 3em;  
 }
 .page-home  .home-container img{
@@ -194,7 +194,7 @@ body {
 }
 
 #map {
-  height: 630px;
+  height: 830px;
   margin-top: 2em;
 }
 
@@ -261,7 +261,7 @@ body {
 .page-map .filters {
   display: flex;
   flex-direction: column;
-  height: 41em;       
+  height: 51em;     
   overflow: hidden;   
 }
 
@@ -313,7 +313,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  height: 620px;
+  height: 820px;
 }
 
 .page-map .details {
