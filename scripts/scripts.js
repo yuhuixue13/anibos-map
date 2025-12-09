@@ -16,7 +16,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name:"Anime Zakka",
                 coords: [42.348481056288655, -71.08723468256417],
-                desc: " Newbury St · Anime Goods Shop ",
+                desc: " 349 Newbury St · Anime Goods Shop ",
                 img: "images/anime_zakka.png",
                 url: "https://www.animezakka.com/",
                 descL: "This destination for anime enthusiasts stocks toys & threads, plus quirky Japanese novelty items.",
@@ -26,7 +26,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Newbury Comics",
                 coords: [42.34815674945346, -71.08706425497522],
-                desc: " Newbury St ·Anime & Comics Shop ",
+                desc: " 348 Newbury St ·Anime & Comics Shop ",
                 img: "images/newburycomicsN.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
@@ -36,7 +36,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Anime Goods",
                 coords: [42.348333642986674, -71.08624670671078],
-                desc: " Newbury St ·Anime Merch Shop ",
+                desc: " 330 Newbury St ·Anime Merch Shop ",
                 img: "images/Anime_Goods.jpg",
                 url: "https://www.instagram.com/nbanimegoods/",
                 descL: "Store selling anime-inspired toys and collectibles such as labubus alongside blind boxes.",
@@ -46,7 +46,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Anime Zakka",
                 coords: [42.3727966424579, -71.11990083309102],
-                desc: " Cambridge · Anime Goods Shop ",
+                desc: " 36 John F. Kennedy St · Anime Goods Shop ",
                 img: "images/AnimeZakkaH.webp",
                 url: "https://www.animezakka.com/",
                 descL: "This destination for anime enthusiasts stocks toys & threads, plus quirky Japanese novelty items.", 
@@ -56,7 +56,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "More Fun",
                 coords: [42.354136118468006, -71.06214824130628],
-                desc: " Chinatown · Anime Goods Shop ",
+                desc: " 31 Harrison Ave · Anime Goods Shop ",
                 img: "images/morefun.jpg",
                 url: "https://www.morefunus.com/",
                 descL: "Retail store selling stationery, tableware, tech accessories, toys, Chinese traditional culture goods, and gifts in Boston Chinatown.", 
@@ -66,7 +66,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Tokyo Anime Center",
                 coords: [42.57850969818254, -71.2411256135517],
-                desc: " Burlington · Anime Goods Shop ",
+                desc: " 75 Middlesex Turnpike Suite 2039A · Anime Goods Shop ",
                 img: "images/TokyoAnimeCenter.png",
                 url: "https://www.instagram.com/tac_burlingtonmall_ma/",
                 descL: "Official account of Tokyo Anime Center Burlington Mall.", 
@@ -76,7 +76,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Newbury Comics",
                 coords: [42.361866647110936, -71.054910154064],
-                desc: " Quincy Market · Anime & Comics Shop ",
+                desc: " Faneuil Hall Marketplace, 1 N Market St · Anime & Comics Shop ",
                 img: "images/newburycomicsQ.webp",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
@@ -86,7 +86,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Newbury Comics",
                 coords: [42.37926856510349, -71.12223461683303],
-                desc: "  Cambridge · Anime & Comics Shop ",
+                desc: " 36 John F. Kennedy St · Anime & Comics Shop ",
                 img: "images/newburycomicsH.jpg",
                 url: "https://www.newburycomics.com/",
                 descL: "Source for music, movies, comics & other pop culture goods, with an emphasis on independent artists.",
@@ -98,7 +98,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Comicopia",
                 coords: [42.348826848375175, -71.09313301833218],
-                desc: "  Commonealth · Comics Book Shop ",
+                desc: " 464 Commonwealth Ave · Comics Book Shop ",
                 img: "images/Comicopia.jpg",
                 url: "https://comicopia.com/",
                 descL: "Niche bookshop for new comics, graphic novels, paperbacks & translated Japanese manga..",
@@ -108,7 +108,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Friar Tuck's Comics & Collectibles",
                 coords: [42.34316520057848, -71.12330793182595],
-                desc: "  Brookline · Comics Book Shop ",
+                desc: " 310 Harvard St 2nd floor · Comics Book Shop ",
                 img: "images/friartucks.webp",
                 url: "https://friartuckscomics.com/",
                 descL: "Comic book shop featuring classic and independent comics, along with collectibles and role-playing games.x",
@@ -118,7 +118,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "The Million Year Picnic",
                 coords: [42.37308262085624, -71.12050707415347],
-                desc: "  Cambridge · Comics Book Shop ",
+                desc: " 99 Mt Auburn St · Comics Book Shop ",
                 img: "images/Themillionyearpicnic.webp",
                 url: "https://www.themillionyearpicnic.com/",
                 descL: "Long-running comics shop specializing in independent & alternative comic books & graphic novels.",
@@ -128,7 +128,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Comicazi",
                 coords: [42.39630721978794, -71.1212386913431],
-                desc: "  Somerville · Comics Book Shop ",
+                desc: "  407 Highland Ave · Comics Book Shop ",
                 img: "images/Comicazi.png",
                 url: "https://www.comicazi.com/",
                 descL: "This snug comic shop also offers items such as graphic novels, games & toys, plus events.",
@@ -138,7 +138,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Hub Comics",
                 coords: [42.38131869789423, -71.09714246065965],
-                desc: "  Somerville · Comics Book Shop ",
+                desc: " 19 Bow St · Comics Book Shop ",
                 img: "images/Hubcomics.webp",
                 url: "https://hubcomics.com/",
                 descL: "Snug indie comics shop with a wide selection of graphic novels, plus signings & movie nights.",
@@ -148,7 +148,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Amaya Bros Comics",
                 coords: [42.37164967738756, -71.08201273182456],
-                desc: "  Cambridge · Comics Book Shop ",
+                desc: "357 Cambridge St · Comics Book Shop ",
                 img: "images/Amayabroscomics.webp",
                 url: "https://amayabroscomics.com/",
                 descL: "The Amaya Bros. Comics store hopes to bring both comics, sports memorabillia, and trading card supplies to the Cambridge and Greater Boston area.",
@@ -158,7 +158,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "Magic Dragon Comics",
                 coords: [42.41401408624637, -71.14534374901326],
-                desc: "  Arlington · Comics Book Shop ",
+                desc: " 91 Warren St · Comics Book Shop ",
                 img: "images/Magicdragoncomics.webp",
                 url: "https://www.facebook.com/magicdragoncomics",
                 descL: "Quaint collectibles store stocking comic books & graphic novels for all ages in a no-frills setting.",
@@ -168,7 +168,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             {
                 name: "New England Comics (NEC)",
                 coords: [42.25174042018753, -71.00060561742801],
-                desc: "  Quincy · Comics Book Shop ",
+                desc: " 1511 Hancock St · Comics Book Shop ",
                 img: "images/NEC.jpg",
                 url: "https://newenglandcomics.biz/",
                 descL: "Outpost of a local chain featuring a variety of comics & graphic novels, plus toys & action figures.",
