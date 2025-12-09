@@ -267,6 +267,7 @@ body {
 
 .page-map .location-list {
   flex: 1 1 auto;
+  height:auto;
   min-height: 0;      /**/
   overflow-y: auto;
 }
@@ -622,8 +623,7 @@ body {
 
   .page-map .location-list {
     flex: 1 1 auto;
-    min-height: 0;
-    max-height: 450px;  
+    max-height: auto;  
     overflow-y: auto;    /**/
   }
 
