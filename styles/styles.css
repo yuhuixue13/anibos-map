@@ -764,9 +764,11 @@ body {
     font-weight: 600;
   }
 
+
   .page-about .about-document-list li {
-    list-style: disc;
+    list-style: none;
     margin-left: 1.2em;
+  
   }
 
   .page-about .about-document-list p {
@@ -813,6 +815,19 @@ body {
     height: auto;
     padding-bottom: 10px;   
   }
+}
+
+.about-document-list li a::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/Logo-small.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
   
