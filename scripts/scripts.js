@@ -324,7 +324,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             detailDescL.textContent = loc.descL;     
             
             if (detailLink) {
-                detailLink.href = loc.url || '#';   // 这 || '#'啥啊？！！！
+                detailLink.href = loc.url;   // 这 || '#'啥啊？！！！
             }
         };
 

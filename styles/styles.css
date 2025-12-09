@@ -64,13 +64,16 @@ body {
 
 .page-home  .home-container .illustration-map{
     max-width: 40em;
-    max-height: 42em;
-    margin-left: 3em;
-    
-    
+    max-height: 41em;
+    margin-left: 3em;  
 }
 .page-home  .home-container img{
     border-radius: 7em;
+}
+
+.page-home .home-image p{
+  margin: 0;
+  padding-left: 5em;
 }
 
 .page-home .home-text {
@@ -121,7 +124,6 @@ body {
     grid-row: 8/9;
 }
 
-
 .logo-large {
   width: 20em;
   margin-bottom: 8px;
@@ -141,8 +143,6 @@ body {
   50% { opacity: 0; }      
   100% { opacity: 0; }     
 }
-
-
 
  .home-container .go-button {
   background-color: #CC3F4F;
@@ -475,16 +475,144 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.about-previous-title {
+.about-document-title {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 16px;
 }
 
-.about-previous-list {
-  list-style: none;
+.page-about .about-document-list {
   margin: 0;
   padding: 0;
   min-height: 200px;
 }
 
+.page-about .about-document-title{
+  margin-top: 1em;
+  font-size: 30px;
+}
+
+.page-about .about-document-list {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;;
+
+  padding-left: 1em;
+  font: bold;
+}
+
+
+/*开始@media*/
+
+/* ------------------------------- */
+/* MOBILE RESPONSIVE — HOME PAGE  */
+/* ------------------------------- */
+
+@media (max-width: 768px) {
+
+  /* 整体页面变成单栏，左右 padding 缩小 */
+  .page-home .home-container {
+    display: block;
+    padding: 20px 16px;
+  }
+
+  /* header 改成更窄的左右 padding */
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* nav 文字变大一点、间距更开 */
+  .nav {
+    gap: 20px;
+  }
+
+  .nav a {
+    font-size: 16px;
+    padding-right: 0;
+    background-image: none; /* 去掉 hover 底线避免太拥挤 */
+  }
+
+  /* Illustration map 图片全宽显示、自动缩放 */
+ .home-image {
+    border-radius: 0%;
+    height: 400px;       /* 相框高度 */
+    overflow: hidden;
+  }
+
+  .home-image img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-10px);  /* 调整露出的区域 */
+  }
+
+}
+
+.page-home  .home-container .illustration-map{
+    margin-left: 0;  
+}
+
+  .home-image p {
+    padding-left: 0;
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .page-home .home-text {
+    display: block;
+    text-align: center;
+    padding: 0 18px;
+    margin-top: 3em;
+  }
+
+ 
+
+  .home-text h1 {
+    font-size: 22px;
+    margin-top: 16px;
+    padding-bottom: 1em;
+  }
+
+  .home-text h3 {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .home-text .firstp{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+
+  .home-text .secondp {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 12px;
+    padding-bottom: 2em;
+  }
+
+
+
+  .logo-large {
+    width: 15em;
+    display: none;
+  }
+
+  /* 小 logo 动画的尺寸也调整一下 */
+  .logo-small {
+    width: 5em;
+    display:none;
+  }
+
+  /* 按钮全宽一点，让手机更好点 */
+  .home-container .go-button {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 0;
+    font-size: 18px;
+    margin: 24px auto 0;
+    display: block;
+  }
+}
