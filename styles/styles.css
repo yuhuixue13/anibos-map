@@ -503,6 +503,40 @@ body {
   font: bold;
 }
 
+.about-document-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-document-list li a {
+    position: relative;
+    display: inline-flex;     
+    align-items: center;       
+    padding-left: 90px;       
+    min-height: 32px;         
+}
+
+.about-document-list li a {
+    color:#CC3F4F;        
+}
+
+
+
+
+.about-document-list li a::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    background-image: url("../images/Logo-small.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 
 /*开始@media*/
 
