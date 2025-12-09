@@ -296,6 +296,9 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             const m = L.marker (loc.coords)
             .addTo (map)
             .bindPopup (`<b>${loc.name}</b> <br> ${loc.desc ?? ""} <br> <i>${loc.time ?? ""}</i>`);
+            m.on('click', () => {
+            renderDetail(loc)});
+
             markerStore. push({
                 marker: m,
                 categories: loc.categories,
@@ -308,7 +311,6 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
         const filterButtons = document.querySelectorAll('.filter-buttons button');
         filterButtons.forEach(btn =>{
             btn.addEventListener ('click', () =>{
-                //
                 filterButtons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 const category = btn.dataset.category;
@@ -324,7 +326,7 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             detailDescL.textContent = loc.descL;     
             
             if (detailLink) {
-                detailLink.href = loc.url;   // 这 || '#'啥啊？！！！
+                detailLink.href = loc.url;  
             }
         };
 
@@ -379,23 +381,18 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
             }
         });
 
-        // 2. 过滤出这个分类下的所有店铺
         const filtered = locations.filter(loc =>
             loc.categories.includes(category)
         );
-
-        // 3. 渲染左侧列表
         renderLocationList(filtered);
 
-        // 4. 右侧详情显示这个分类里的第一个店
         if (filtered.length > 0) {
             renderDetail(filtered[0]);
         } else {
-            // 可选：没有店时清空
             detailName.textContent = 'No place found';
             detailLocation.textContent = '';
             detailDesc.textContent = '';
-            // detailImg.src = 'images/placeholder.png';
+            detailImg.src = 'images/aboutbackground.png';
             if (detailLink) detailLink.href = '#';
         }
         };
