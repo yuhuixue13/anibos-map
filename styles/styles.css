@@ -232,7 +232,7 @@ body {
 }
 
 .page-map .filter-buttons button:hover {
-  box-shadow: 0 6px 14px rgba(99, 182, 255, 0.552);
+  box-shadow: 0 6px 14px #63b6ff8d;
 }
 
 .map-container .filter-buttons button.active {
@@ -423,7 +423,7 @@ body {
 
 .self-pic {
   background-color: #cfe8ee;
-  border: 4px solid #86c8e0;
+  border: 4px solid #ff63638d;
   border-radius: 4px;
    width: 20em;
   height: 20em; 
@@ -606,31 +606,27 @@ body {
 
 @media (max-width: 768px) {
 
-  /* 1. 让 body 在手机上恢复成自适应高度 */
   .page-map body {
     height: auto;
   }
 
-  /* 2. map-container 也不要再撑满 100%，否则里面内容多了就挤出来 */
   .page-map .map-container {
     height: auto;
-    align-items: flex-start;  /* 不要强行拉伸到同高 */
+    align-items: flex-start;  
   }
 
-  /* 3. 左侧 filters 区域：高度自适应，不裁剪 */
   .page-map .filters {
     height: auto;
     overflow: visible;
   }
 
-  /* 4. 卡片列表：不要限制高度，也不要单独滚动，跟整页一起滚动就好 */
   .page-map .location-list {
-    min-height: auto;
-    max-height: none;
-    overflow-y: visible;
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: 420px;  
+    overflow-y: auto;    /**/
   }
 
-  /* （下面继续保留你之前的 mobile layout 设置就好） */
   .page-map .map-container {
     display: grid;
     grid-template-columns: 1.1fr 1.4fr;
@@ -670,12 +666,121 @@ body {
   .page-map .details {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    position: static;
     height: auto;
     margin-top: 8px;
   }
 }
 
+
+@media (max-width: 768px) {
+
+  .page-about .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 16px 40px;
+    max-width: 100%;
+  }
+
+  .page-about .about-right {
+  order: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center;
+}
+
+  .page-about .about-left {
+    order: 2;
+  }
+
+  .page-about .about-bg {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .page-about .about-bg-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5em;    
+  }
+
+\  .page-about .about-previous {
+    margin-top: 24px;
+    padding: 20px 0 0;
+    box-shadow: none;          
+    background-color: transparent;
+  }
+
+  .page-about .about-document-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 12px;
+  }
+
+  .page-about .about-document-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 8px;
+    padding-left: 0;
+    font-weight: 600;
+  }
+
+  .page-about .about-document-list li {
+    list-style: disc;
+    margin-left: 1.2em;
+  }
+
+  .page-about .about-document-list p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .page-about .self-pic {
+    width: 230px;
+    height: 230px;
+    margin: 32px auto 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-about .self-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .page-about .about-intro-me {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .page-about .about-title-cn {
+    font-size: 24px;     
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .page-about .about-intro-me p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;   
+    height: auto;
+    padding-bottom: 10px;   
+  }
+}
 
   
 
