@@ -331,11 +331,11 @@ const map = new L.Map('map').setView([42.3554, -71.0693], 14);
         };
 
         function renderLocationList(list) {
-            locationList.innerHTML = '';    //这啥啊
+            locationList.innerHTML = '';   
 
             list.forEach(loc => {
-            const card = document.createElement('div');   //为什么要创建div
-            card.classList.add('loc-card');   //这两步是干啥的？
+            const card = document.createElement('div');   
+            card.classList.add('loc-card');  
             card.dataset.name = loc.name;
 
             const img = document.createElement('img');  
