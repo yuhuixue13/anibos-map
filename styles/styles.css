@@ -71,6 +71,10 @@ body {
     border-radius: 7em;
 }
 
+.home-image a{
+  color:#CC3F4F;
+}
+
 .page-home .home-image p{
   margin: 0;
   padding-left: 5em;
